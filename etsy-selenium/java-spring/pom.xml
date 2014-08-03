@@ -9,11 +9,11 @@
   <description>JBehave stories verifying functionality of Etsy.com using Java and Spring</description>
 
   <properties>
-    <jbehave.core.version>3.9-SNAPSHOT</jbehave.core.version>
-    <jbehave.web.version>3.6-SNAPSHOT</jbehave.web.version>
+    <jbehave.core.version>4.0-beta-8</jbehave.core.version>
+    <jbehave.web.version>3.6-beta-2</jbehave.web.version>
     <jbehave.site.version>3.1.1</jbehave.site.version>
     <fluent.selenium.version>1.6.4</fluent.selenium.version>
-    <selenium.version>2.32.0</selenium.version>
+    <selenium.version>2.42.2</selenium.version>
     <ignore.failures>true</ignore.failures>
     <meta.filter></meta.filter>
     <threads>1</threads>
@@ -32,7 +32,8 @@
   </dependencyManagement>
 
   <dependencies>
-    <dependency>
+
+      <dependency>
       <groupId>org.jbehave</groupId>
       <artifactId>jbehave-core</artifactId>
       <version>${jbehave.core.version}</version>
@@ -120,8 +121,8 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>2.1</version>
           <configuration>
-            <source>1.5</source>
-            <target>1.5</target>
+            <source>1.7</source>
+            <target>1.7</target>
           </configuration>
         </plugin>
         <plugin>
